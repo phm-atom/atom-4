@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+        <title>A Simple Web Component</title>
+        <script src="atom.js"></script>
+        <script src="base-button.js"></script>
+        <script src="md-button.js"></script>
+        
+        <style>
+            .group {
+                margin: 16px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="group">
+            <base-button onclick="onButtonClick()"></base-button>
+            <base-button onclick="onButtonClick()" caption="OK"></base-button>
+            <base-button onclick="onButtonClick()" caption="Cancel"></base-button>
+        </div>
+        
+        
+        <div class="group">
+            <md-button onclick="onButtonClick()"></md-button>
+            <md-button onclick="onButtonClick()" caption="OK"></md-button>
+            <md-button onclick="onButtonClick()" caption="Cancel"></md-button>
+        </div>
+        
+        <script>
+            function onButtonClick () {
+                console.log("button clicked");
+            }
+        </script>
+    </body>
+</html>
